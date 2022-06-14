@@ -5,23 +5,33 @@ import Frase from './components/Frase';
 import SayMyName from './components/SayMyName';
 import Pessoa from './components/Pessoa';
 import List from './components/List';
+import Evento from './components/Evento';
+import Form from './components/Form';
+import Button from './components/Evento/Button';
+import Condicional from'./components/Condicional';
 
 function App() {
   const nome = 'Rafael'
   const newName = nome.toUpperCase()
-  function sum(a,b){
-    return a+b
-  }
+ 
 
   const url = 'https://via.placeholder.com/150'
   return (
+    
     <div className="App">
-      <List/>
-      <Frase/>
-      <Frase/>
+      <h1>Renderização Condicional</h1>
+      <Condicional/>
+      <Evento/>
+      <Form/>
+     
+      
+      
+
+ 
+
       <h1>Olá {newName}</h1>
-      <p>Meu Primeiro App em React{2+2}</p>
-      <p>Valor soma = {sum(1,5)}</p>
+      <p>Meu Primeiro App em React</p>
+      
       <img src={url} alt="Minha Imagem"/>
       <HelloWorld/>
       <SayMyName nome="Rafael"/>
