@@ -9,8 +9,11 @@ import Evento from './components/Evento';
 import Form from './components/Form';
 import Button from './components/Evento/Button';
 import Condicional from'./components/Condicional';
+import OutraLista from './components/OutraLista';
+
 
 function App() {
+  const meusItens=['React','Vue','Angular']
   const nome = 'Rafael'
   const newName = nome.toUpperCase()
  
@@ -19,10 +22,16 @@ function App() {
   return (
     
     <div className="App">
+      <h1>Renderização lista</h1>
+      <OutraLista itens={meusItens}/>
+      <OutraLista itens={[]}/>
+
       <h1>Renderização Condicional</h1>
+      
       <Condicional/>
       <Evento/>
       <Form/>
+      
      
       
       
